@@ -173,3 +173,6 @@ height: 100%;
 .footer__item{
   margin-right: 40px;
 }
+.nav__link{
+text-decoration: none;
+}
