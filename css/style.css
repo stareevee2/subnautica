@@ -21,11 +21,24 @@ align-items: center;
 .nav__item{
   margin-right: 63px; 
   color: #FC0000;
-font-family: Nico Moji;
+font-family: "Rubik", sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal; 
+}
+.burger{
+ height: 50px;
+ width: 80px; 
+ background-color: transparent;
+ border: none;
+ display: none;
+}
+.burger__line{
+ height: 10px;
+ width: 100%;
+ background: rgb(255, 0, 255); 
+ margin-bottom: 10px;
 }
 .hero-block{
 background-color: #4200FF;  
@@ -38,7 +51,7 @@ padding: 90px 0 91px;
 }
 .hero-block__title{
   color: #E4E4E4;
-  font-family: Nico Moji;
+  font-family: "Rubik", sans-serif;
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
@@ -54,7 +67,7 @@ padding: 15px 78px;
 text-decoration: none;
 color: #000;
 text-align: center;
-font-family: Nico Moji;
+font-family: "Rubik", sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -68,7 +81,7 @@ padding: 70px 0px 154px;
 }
 .about__title{
   color: #E4E4E4;
-  font-family: Nico Moji;
+  font-family: "Rubik", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -98,7 +111,7 @@ line-height: normal;
 }
 .video__title{
   color: #E4E4E4;
-  font-family: Nico Moji;
+  font-family: "Rubik", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -119,7 +132,7 @@ line-height: normal;
 }
 .gallery__title{
   color: #E4E4E4;
-  font-family: Nico Moji;
+  font-family: "Rubik", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -151,7 +164,7 @@ height: 100%;
 }
 .footer__title{
   color: #E4E4E4;
-  font-family: Nico Moji;
+  font-family: "Rubik", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -160,7 +173,7 @@ height: 100%;
 }
 .footer__text{
   color: #FFF;
-  font-family: Nico Moji;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -175,4 +188,52 @@ height: 100%;
 }
 .nav__link{
 text-decoration: none;
+}
+@media (max-width:834px) {
+ .container{
+  max-width: 580px;
+ }
+ .nav{
+ display: none;
+ }
+.burger{
+ display:block; 
+}
+.container_hero-block{
+padding: 125px 0 168px;
+ 
+}
+.hero-block__img{  
+display:none;  
+} 
+.container_about{
+ padding:58px 0 114px; 
+}
+.about__title{
+ margin-bottom: 0px; 
+}
+.about__content{
+flex-direction: column-reverse; 
+align-items:center;
+}
+.about__text{
+ margin-top: 15px;
+ text-align: center; 
+}
+.container_video{
+padding:33px 0px 27px;  
+}
+.video__video{
+height: 350px;  
+}
+.gallery{
+padding:83px 0px 50px;  
+}
+.gallery__list{
+gap:10px;
+justify-content: space-around;  
+}
+.gallery__item{
+width:49%  
+}
 }
